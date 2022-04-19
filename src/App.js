@@ -7,6 +7,8 @@ import SignUp from './pages/SignUp/SignUp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { Navbar, Footer } from './components';
+import Signup from "./components/signup/Signup";
+import Login from "./components/login/Login";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path="/sign-up" component={Signup} />
+        <Route path="/Login" component={Login} />
         <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/sign-up' component={SignUp} />
